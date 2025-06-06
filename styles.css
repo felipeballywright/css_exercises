@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: black;
+}
+
+#main-container{
+    width: 50%;
+    height: 20rem;
+    margin: 3rem auto;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.button-container{
+    height: 5.5rem;
+}
+
+.blue-buttons{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px rgb(0, 0, 127) solid;
+    border-radius: 1rem;
+}
+
+.blue-buttons:hover {
+    cursor: pointer;
+}
+
+#transition-button {
+    transition: all 0.5s ease-out 0s;
+}
+
+#transition-button:hover{
+    width: 12.5rem;
+    height: 5rem;
+    font-size: 2rem;
+}

@@ -1,0 +1,5 @@
+https://github.com/TheOdinProject/css-exercises/tree/main/advanced-html-css/animation
+
+1st step is done
+Complete the 2nd one
+Build the 3rd one from scratch
