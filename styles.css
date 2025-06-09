@@ -56,3 +56,30 @@ body {
     height: 5rem;
     font-size: 2rem;
 }
+
+#modal-container{
+    width: 15%;
+    height: 15rem;
+    margin: 3rem auto;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: opacity 1s linear 0.25s;
+}
+
+#modal-container p{
+  margin-bottom: 1.5rem;
+}
+
+.show{
+  visibility: visible;
+  opacity: 100%;
+}
+
+.hide{
+  opacity: 0%;
+}
