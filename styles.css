@@ -16,7 +16,7 @@ body {
   background-color: black;
 }
 
-#main-container{
+.main-container{
     width: 50%;
     height: 20rem;
     margin: 3rem auto;
@@ -59,16 +59,15 @@ body {
 }
 
 #modal-container{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
+    position: absolute;
+    top: 4.5%;
+    left: 42.5%;
+    transform: translate(0%, -50%);
     transition: transform 0.3s ease-in-out, opacity 0.4s ease;
     width: 15%;
     height: 15rem;
-    opacity: 50%;
+    opacity: 0%;
     background-color: beige;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +76,6 @@ body {
     border: 1px black solid;
     border-radius: 2rem;
     z-index: 10;
-    visibility: hidden;
 }
 
 #modal-container p{
@@ -85,7 +83,7 @@ body {
 }
 
 #modal-container.show{
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 0%);
   opacity: 100%;
   pointer-events: all;
 }
@@ -93,4 +91,39 @@ body {
 #modal-container.hide{
   opacity: 0%;
   pointer-events: none;
+}
+
+#dropdown-container{
+  height: 30rem;
+}
+
+#dropdown-title,
+.dropdown-option{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px rgb(0, 0, 127) solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown-title:hover{
+  cursor: pointer;
+}
+
+.dropdown-option{
+  height: 0rem;
+  font-size: 0;
+}
+
+.dropdown-show{
+    visibility: visible;
+}
+
+.dropdown-hide{
+  visibility: hidden;
 }

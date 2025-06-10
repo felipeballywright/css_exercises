@@ -7,7 +7,7 @@
     <title>CSS Exercises</title>
 </head>
 <body>
-    <div id="main-container">
+    <div class="main-container">
         <div class="button-container">
             <button id="transition-button" class="blue-buttons">Transition!</button>
         </div>
@@ -15,10 +15,19 @@
             <button id="open-modal-button" class="blue-buttons">Open Modal</button>
         </div>
     </div>
-    <div id="modal-container">
+    <div id="modal-container" class="hide">
         <h2>Look at me!</h2>
         <p>I'm a popup dialog</p>
         <button id="close-modal-button" class="blue-buttons">Close Modal</button>
+    </div>
+    <div id="dropdown-container" class="main-container">
+        <div id="dropdown-title">MENU</div>
+        <ul class="dropdown-menu">
+            <li class="dropdown-option dropdown-hide">ITEM 3</li>
+            <li class="dropdown-option dropdown-hide">ITEM 4</li>
+            <li class="dropdown-option dropdown-hide">ITEM 2</li>
+            <li class="dropdown-option dropdown-hide">ITEM 5</li>
+        </ul>
     </div>
     <script src="script.js"></script>
 </body>

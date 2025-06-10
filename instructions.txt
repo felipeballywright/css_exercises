@@ -1,7 +1,4 @@
 https://github.com/TheOdinProject/css-exercises/tree/main/advanced-html-css/animation
 
-- 1st step is done
-- Complete the 2nd one. 
-    The visibility and opacity transition works fine. 
-    Now you need to add the movement.
+- 1st and 2nd steps are done
 - Build the 3rd one from scratch
