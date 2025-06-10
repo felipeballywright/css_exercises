@@ -10,7 +10,6 @@ function modalPopUp(){
     document.getElementById("close-modal-button").addEventListener("click", () => {
         console.log("Close modal!");
         popUpWindow.className = "hide";
-        setTimeout(() => popUpWindow.style.visibility = "hidden", 1000);
     });
 }
 
