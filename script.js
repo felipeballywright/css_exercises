@@ -12,15 +12,15 @@ function modalPopUp(){
     });
 
     const dropdownBtn = document.getElementById("dropdown-title");
-    const dropdownOptions = Array.from(document.querySelectorAll(".dropdown-option"));
-    console.log("Before button", dropdownOptions);
+    const dropdownOptions = document.querySelectorAll(".dropdown-option");
+    const dropdownOptionsArr = Array.from(dropdownOptions);
 
     dropdownBtn.addEventListener("click", () => {
         dropdownOptions.forEach(element => {
-            if(element.className === "dropdown-dropdown-hide"){
-                element.className === "dropdown-option dropdown-show";
-            } else if(element.className === "dropdown-option dropdown-show"){
-                element.className === "dropdown-option dropdown-hide"
+            if(element.classList.contains("dropdown-hide")){
+                element.className = "dropdown-option dropdown-show";
+            } else if(element.classList.contains("dropdown-show")){
+                element.className = "dropdown-option dropdown-hide"
             }
         });
         console.log("After button", dropdownOptions)
@@ -28,17 +28,5 @@ function modalPopUp(){
 
 
 }
-
-// if(dropdownOptions.className === "dropdown-option dropdown-hide"){
-//             console.log("Change dropdown options class to SHOW");
-//             dropdownOptions.forEach(element => {
-//                 element.className = "dropdown-option dropdown-show"
-//             });
-//         } else if(dropdownOptions.className === "dropdown-option dropdown-show"){
-//             console.log("Change dropdown options class to HIDE");
-//             dropdownOptions.forEach(element => {
-//                 element.className = "dropdown-option dropdown-hide"
-//             });
-//         }
 
 modalPopUp();

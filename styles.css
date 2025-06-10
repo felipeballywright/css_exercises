@@ -116,14 +116,17 @@ body {
 }
 
 .dropdown-option{
-  height: 0rem;
-  font-size: 0;
+  transition: all 0.2s ease-out 0s;
 }
 
 .dropdown-show{
     visibility: visible;
+    font-size: 1.5rem;
+    height: 4rem;
 }
 
 .dropdown-hide{
   visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
