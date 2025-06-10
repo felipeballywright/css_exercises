@@ -2,5 +2,4 @@ https://github.com/TheOdinProject/css-exercises/tree/main/advanced-html-css/anim
 
 - 1st and 2nd steps are done
 - Finish the 3rd one:
-    - The menu button has to stay on the same place
     - It has to "bounce" when you open it, you need a middle value for the transition
